@@ -30,15 +30,16 @@ void Setup() {
 		}
 	}
 
-	map[10][10] = TILES::POINT;
-	map[10][11] = TILES::POINT;
-	map[10][12] = TILES::POINT;
-	map[10][50] = TILES::POINT;
-	map[10][51] = TILES::POINT;
-	map[10][52] = TILES::POINT;
-	map[10][90] = TILES::POINT;
-	map[10][91] = TILES::POINT;
-	map[10][92] = TILES::POINT;
+	map[12][18] = TILES::POINT;
+	map[12][19] = TILES::POINT;
+	map[12][20] = TILES::POINT;
+	map[12][58] = TILES::POINT;
+	map[12][59] = TILES::POINT;
+	map[12][60] = TILES::POINT;
+	map[12][98] = TILES::POINT;
+	map[12][99] = TILES::POINT;
+	map[12][100] = TILES::POINT;
+	
 	map[11][1] = TILES::POINT;
 	map[12][1] = TILES::POINT;
 	map[13][1] = TILES::POINT;
@@ -63,6 +64,58 @@ void Setup() {
 	map[MAP_VERTICAL - 2][61] = TILES::POINT;
 	map[MAP_VERTICAL - 2][62] = TILES::POINT;
 	map[MAP_VERTICAL - 2][63] = TILES::POINT;
+
+	map[11][7] = TILES::WALL;
+	map[12][7] = TILES::WALL;
+	map[13][7] = TILES::WALL;
+	map[14][7] = TILES::WALL;
+	map[10][MAP_HORIZONTAL - 8] = TILES::WALL;
+	map[11][MAP_HORIZONTAL - 8] = TILES::WALL;
+	map[12][MAP_HORIZONTAL - 8] = TILES::WALL;
+	map[13][MAP_HORIZONTAL - 8] = TILES::WALL;
+	map[3][56] = TILES::WALL;
+	map[3][57] = TILES::WALL;
+	map[3][58] = TILES::WALL;
+	map[3][59] = TILES::WALL;
+	map[3][60] = TILES::WALL;
+	map[3][61] = TILES::WALL;
+	map[3][62] = TILES::WALL;
+	map[3][63] = TILES::WALL;
+	map[MAP_VERTICAL - 4][56] = TILES::WALL;
+	map[MAP_VERTICAL - 4][57] = TILES::WALL;
+	map[MAP_VERTICAL - 4][58] = TILES::WALL;
+	map[MAP_VERTICAL - 4][59] = TILES::WALL;
+	map[MAP_VERTICAL - 4][60] = TILES::WALL;
+	map[MAP_VERTICAL - 4][61] = TILES::WALL;
+	map[MAP_VERTICAL - 4][62] = TILES::WALL;
+	map[MAP_VERTICAL - 4][63] = TILES::WALL;
+
+	map[13][30] = TILES::WALL;
+	map[13][31] = TILES::WALL;
+	map[13][32] = TILES::WALL;
+	map[13][33] = TILES::WALL;
+	map[13][34] = TILES::WALL;
+	map[13][35] = TILES::WALL;
+	map[13][36] = TILES::WALL;
+	map[13][37] = TILES::WALL;
+	map[14][34] = TILES::WALL;
+	map[15][34] = TILES::WALL;
+	map[16][34] = TILES::WALL;
+	map[17][34] = TILES::WALL;
+
+	map[13][80] = TILES::WALL;
+	map[13][81] = TILES::WALL;
+	map[13][82] = TILES::WALL;
+	map[13][83] = TILES::WALL;
+	map[13][84] = TILES::WALL;
+	map[13][85] = TILES::WALL;
+	map[13][86] = TILES::WALL;
+	map[13][87] = TILES::WALL;
+	map[12][84] = TILES::WALL;
+	map[11][84] = TILES::WALL;
+	map[10][84] = TILES::WALL;
+	map[9][84] = TILES::WALL;
+
 
 	map[11][0] = TILES::EMPTY;
 	map[12][0] = TILES::EMPTY;
@@ -89,6 +142,8 @@ void Setup() {
 	map[MAP_VERTICAL - 1][61] = TILES::EMPTY;
 	map[MAP_VERTICAL - 1][62] = TILES::EMPTY;
 	map[MAP_VERTICAL - 1][63] = TILES::EMPTY;
+
+
 
 	for (size_t i = 0; i < MAP_VERTICAL; i++)
 	{
