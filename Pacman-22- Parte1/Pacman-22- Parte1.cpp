@@ -1,5 +1,6 @@
 #include <iostream>
 #include <conio.h>
+#include <cstdlib>
 #define MAP_VERTICAL 29
 #define MAP_HORIZONTAL 120
 #define PERSONAJE '0'
@@ -14,6 +15,8 @@ int personaje_x;
 int personaje_y;
 int puntuacion_actual = 0;
 int puntuacion_total;
+
+
 
 void Setup() {
 	personaje_x = MAP_HORIZONTAL / 2;
@@ -248,6 +251,8 @@ void Draw() {
 		std::cout << std::endl;
 	}
 	std::cout << puntuacion_actual << '/' << puntuacion_total;
+	system("COLOR fd");
+	system("title: PACMAN JUAN CARLOS RUIZ");
 }
 
 int main()
