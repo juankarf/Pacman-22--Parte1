@@ -1,4 +1,5 @@
 #include <iostream>
+#include <conio.h>
 #define MAP_VERTICAL 29
 #define MAP_HORIZONTAL 120
 #define PERSONAJE '0'
@@ -159,34 +160,34 @@ void Setup() {
 
 void Input() {
 	char input;
-	std::cin >> input;
-	switch (input)
-	{
-	case 'w':
-	case 'W':
-		currentInput = INPUT::UP;
-		break;
-	case 's':
-	case 'S':
-		currentInput = INPUT::DOWN;
-		break;
-	case 'a':
-	case 'A':
-		currentInput = INPUT::LEFT;
-		break;
-	case 'd':
-	case 'D':
-		currentInput = INPUT::RIGHT;
-		break;
-	case 'q':
-	case 'Q':
-		currentInput = INPUT::QUIT;
-		break;
-	default:
-		currentInput = INPUT::UNKNOWN;
-		break;
-	}
-}
+		input = _getch();
+		switch (input) {
+			case 'w':
+			case 'W':
+				currentInput = INPUT::UP;
+				break;
+			case 's':
+			case 'S':
+				currentInput = INPUT::DOWN;
+				break;
+			case 'a':
+			case 'A':
+				currentInput = INPUT::LEFT;
+				break;
+			case 'd':
+			case 'D':
+				currentInput = INPUT::RIGHT;
+				break;
+			case 'q':
+			case 'Q':
+				currentInput = INPUT::QUIT;
+				break;
+			default:
+				currentInput = INPUT::UNKNOWN;
+				break;
+			}
+		}
+	
 void Logic() {
 	int personaje_y_new = personaje_y;
 	int personaje_x_new = personaje_x;
