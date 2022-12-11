@@ -237,6 +237,8 @@ void Logic() {
 }
 void Draw() {
 	system("CLS");
+	system("COLOR fd");
+	system("title: PACMAN JUAN CARLOS RUIZ");
 	for (size_t i = 0; i < MAP_VERTICAL; i++)
 	{
 		for (size_t j = 0; j < MAP_HORIZONTAL; j++)
@@ -251,8 +253,7 @@ void Draw() {
 		std::cout << std::endl;
 	}
 	std::cout << puntuacion_actual << '/' << puntuacion_total;
-	system("COLOR fd");
-	system("title: PACMAN JUAN CARLOS RUIZ");
+	
 }
 
 int main()
